@@ -1,6 +1,7 @@
 import { useFonts } from "expo-font";
-import { Slot, SplashScreen, Stack } from "expo-router";
+import { Slot, SplashScreen } from "expo-router";
 import React, { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "./global.css";
 const RootLayout = () => {
   //ESTO ES PARA, EL USO DE CARGAR FUENTES
@@ -17,24 +18,15 @@ const RootLayout = () => {
   }, [fontsLoaded, error]);
 
   if (!fontsLoaded && !error) return null;
-  return <Stack
-      screenOptions={{
-        headerShown: true, // mostrar cabecera
-        headerTitleAlign: "center", // centrar el título
-        headerStyle: {
-          backgroundColor: "#fff", // color de fondo del header
-          // puedes personalizar más aquí
-        },
-        title:"Home",
-        headerTintColor: "#000", // color del texto del header
-        headerTitleStyle: {
-          fontFamily: "WorkSans-Black",
-          fontSize: 16,
-        },
-      }}
-    >
-      <Slot />
-    </Stack>
+  return( 
+
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <Slot/>
+      </GestureHandlerRootView>
+  )
+ 
+  
+
 };
 
 export default RootLayout;
