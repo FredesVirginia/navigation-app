@@ -1,5 +1,5 @@
 // CustomStack.tsx (puedes crear este archivo en algún lugar de tu estructura)
-import Products from "@/app/products";
+import Products from "@/app/(stack)/products";
 import { createStackNavigator } from "@react-navigation/stack";
 import { withLayoutContext } from "expo-router";
 import React from "react";
