@@ -10,15 +10,15 @@ const Home = () => {
        <View className='px-10 mt-5'>
 
         <CustomButton color="primary"  className='mb-5'
-        onPress={()=> router.push("/tabs/(stack)/products")}
+        onPress={()=> router.push("/drawer/tabs/products")}
         >Productos</CustomButton>
 
         <CustomButton  color="secondary"  className='mb-5'
-        onPress={()=> router.push("/tabs/(stack)/profile")}
+        onPress={()=> router.push("/drawer/tabs/profile")}
         >Perfil</CustomButton>
 
           <CustomButton  color="tertiary"  className='mb-5'
-        onPress={()=> router.push("/tabs/(stack)/setting")}
+        onPress={()=> router.push("/drawer/tabs/setting")}
         >Ajustes</CustomButton>
       </View>
   </SafeAreaView>

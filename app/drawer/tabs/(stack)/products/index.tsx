@@ -18,7 +18,7 @@ const Products = () => {
              <Text className='text-2xl font-work-black'>{item.price}</Text>
              <Link 
              href={{
-    pathname: "/tabs/(stack)/products/[id]",
+    pathname: "/drawer/tabs/products/[id]",
     params: { id: item.id.toString() }, // Asegurate de que sea string
   }}
              
