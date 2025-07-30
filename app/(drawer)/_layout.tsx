@@ -11,7 +11,7 @@ const  DrawerLayout= () => {
       overlayColor: "rgba(0,0,0,0.4)",
       drawerActiveTintColor:"indigo",
       headerShadowVisible: false,
-       headerShown: false,
+      
       sceneStyle:{
         backgroundColor : "white"
       }
@@ -21,6 +21,7 @@ const  DrawerLayout= () => {
  // This is the name of the page and must match the url from root
           options={{
             drawerLabel: 'Tabs + Stack',
+            headerShown:false,
             title: 'Tabs + Stack',
             drawerIcon:({ color , size})=>(
               <Ionicons name="person-circle-outline" size={size} color={color}/>
