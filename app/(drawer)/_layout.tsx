@@ -11,13 +11,13 @@ const  DrawerLayout= () => {
       overlayColor: "rgba(0,0,0,0.4)",
       drawerActiveTintColor:"indigo",
       headerShadowVisible: false,
-      // headerShown: false,
+       headerShown: false,
       sceneStyle:{
         backgroundColor : "white"
       }
     }}>
        <Drawer.Screen
-          name="tabs/home"
+          name="(tabs)"
  // This is the name of the page and must match the url from root
           options={{
             drawerLabel: 'Tabs + Stack',
@@ -30,7 +30,7 @@ const  DrawerLayout= () => {
         <Drawer.Screen
           name="user/index" // This is the name of the page and must match the url from root
           options={{
-            drawerLabel: 'User',
+            drawerLabel: 'User kk',
             title: 'User',
             drawerIcon:({ color , size})=>(
               <Ionicons name="person-circle-outline" size={size} color={color}/>
